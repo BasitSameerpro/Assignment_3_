@@ -17,6 +17,6 @@
       }
     ],
     "env": {
-      "MONGO_URI": "mongodb+srv://<username>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority"
+      "MONGO_URI": "mongodb+srv://summerkhan054:4IiwY3Opn4y8nLgq@test.g3i8z.mongodb.net/?retryWrites=true&w=majority&appName=test"
     }
   }
