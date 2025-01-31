@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/**/*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/products",
+        "dest": "/api/products"
+      },
+      {
+        "src": "/cart",
+        "dest": "/api/cart"
+      }
+    ],
+    "env": {
+      "MONGO_URI": "mongodb+srv://<username>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority"
+    }
+  }
