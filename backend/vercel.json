@@ -1,22 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "api/**/*.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/products",
-        "dest": "/api/products"
-      },
-      {
-        "src": "/cart",
-        "dest": "/api/cart"
-      }
-    ],
-    "env": {
-      "MONGO_URI": "mongodb+srv://summerkhan054:4IiwY3Opn4y8nLgq@test.g3i8z.mongodb.net/?retryWrites=true&w=majority&appName=test"
-    }
+    "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
   }
+  
